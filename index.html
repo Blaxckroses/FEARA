@@ -72,11 +72,12 @@
       var source = document.createElement('source');
       var media = document.getElementById('media');
 
-      source.setAttribute('src', 'img/sayang.mp3'); // Replace with your audio file URL
+      source.setAttribute('src', 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3'); // Random song URL
       source.setAttribute('type', 'audio/mpeg');
       audio.appendChild(source);
       audio.setAttribute('controls', 'controls'); // Optional: Remove if you don't want controls
       audio.setAttribute('loop', 'loop'); // Loop the audio
+      audio.setAttribute('muted', 'muted'); // Mute the audio for autoplay
       audio.setAttribute('autoplay', 'autoplay'); // Autoplay the audio
 
       media.appendChild(audio); // Append the audio element to the media div
